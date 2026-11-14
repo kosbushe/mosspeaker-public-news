@@ -1,0 +1,105 @@
+{
+    "items": [
+        {
+            "id": "mos_speaker\/32",
+            "type": "КЛУБ",
+            "title": "Четыре минуты я бы не пытался заполнить всем, что знаю по теме.",
+            "source": "Московский спикер",
+            "channel": "mos_speaker",
+            "url": "https:\/\/t.me\/mos_speaker\/32",
+            "published_at": "2026-11-14T09:15:35+00:00"
+        },
+        {
+            "id": "gorkyparkmsk\/14879",
+            "type": "ПАРК ГОРЬКОГО",
+            "title": "Из звуков городского парка можно создать музыку: если услышать то, что обычно остается незамеченным 🎵",
+            "source": "Парк Горького",
+            "channel": "gorkyparkmsk",
+            "url": "https:\/\/t.me\/gorkyparkmsk\/14879",
+            "published_at": "2026-11-14T08:01:45+00:00"
+        },
+        {
+            "id": "mos_speaker\/31",
+            "type": "КЛУБ",
+            "title": "Маленькое упражнение на сегодня. Объясните, чем вы занимаетесь, не называя должности.",
+            "source": "Московский спикер",
+            "channel": "mos_speaker",
+            "url": "https:\/\/t.me\/mos_speaker\/31",
+            "published_at": "2026-11-13T08:59:35+00:00"
+        },
+        {
+            "id": "gorkyparkmsk\/14877",
+            "type": "ПАРК ГОРЬКОГО",
+            "title": "Крымский мост когда-то был деревянным, арку Андреевского отправили в плавание по Москве-реке, а внутри Лужнецкого метромоста разместили целую станцию метро.",
+            "source": "Парк Горького",
+            "channel": "gorkyparkmsk",
+            "url": "https:\/\/t.me\/gorkyparkmsk\/14877",
+            "published_at": "2026-11-13T08:03:23+00:00"
+        },
+        {
+            "id": "mos_speaker\/30",
+            "type": "КЛУБ",
+            "title": "Для меня уважение к аудитории начинается в том числе с её знаний.",
+            "source": "Московский спикер",
+            "channel": "mos_speaker",
+            "url": "https:\/\/t.me\/mos_speaker\/30",
+            "published_at": "2026-11-12T15:40:48+00:00"
+        },
+        {
+            "id": "mos_speaker\/29",
+            "type": "КЛУБ",
+            "title": "Когда готовишь речь, трудно вычеркнуть хороший пример.",
+            "source": "Московский спикер",
+            "channel": "mos_speaker",
+            "url": "https:\/\/t.me\/mos_speaker\/29",
+            "published_at": "2026-11-12T08:59:35+00:00"
+        },
+        {
+            "id": "gorkyparkmsk\/14874",
+            "type": "ПАРК ГОРЬКОГО",
+            "title": "Посмотреть на Москву глазами москвоведа: звучит, как крутая идея для ноябрьского вечера 🔥",
+            "source": "Парк Горького",
+            "channel": "gorkyparkmsk",
+            "url": "https:\/\/t.me\/gorkyparkmsk\/14874",
+            "published_at": "2026-11-11T09:03:54+00:00"
+        },
+        {
+            "id": "mos_speaker\/28",
+            "type": "КЛУБ",
+            "title": "ChatGPT обновил голоса. Можно, конечно, попросить его оценить вашу харизму. Но мне гораздо интереснее другой разговор.",
+            "source": "Московский спикер",
+            "channel": "mos_speaker",
+            "url": "https:\/\/t.me\/mos_speaker\/28",
+            "published_at": "2026-11-11T08:59:35+00:00"
+        },
+        {
+            "id": "gorkyparkmsk\/14867",
+            "type": "ПАРК ГОРЬКОГО",
+            "title": "Видели Парк Горького в метро? Если нет: ловите эксклюзив 🎬",
+            "source": "Парк Горького",
+            "channel": "gorkyparkmsk",
+            "url": "https:\/\/t.me\/gorkyparkmsk\/14867",
+            "published_at": "2026-11-10T13:31:06+00:00"
+        },
+        {
+            "id": "mos_speaker\/27",
+            "type": "КЛУБ",
+            "title": "Вы тоже начинаете выступление со слов «сегодня я хотел бы поговорить»?",
+            "source": "Московский спикер",
+            "channel": "mos_speaker",
+            "url": "https:\/\/t.me\/mos_speaker\/27",
+            "published_at": "2026-11-10T08:59:35+00:00"
+        }
+    ],
+    "updated_at": "2026-11-14T18:32:31+00:00",
+    "sources": [
+        {
+            "channel": "mos_speaker",
+            "status": "snapshot"
+        },
+        {
+            "channel": "gorkyparkmsk",
+            "status": "snapshot"
+        }
+    ]
+}
