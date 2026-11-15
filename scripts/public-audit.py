@@ -45,7 +45,7 @@ knowledge=json.loads(bodies.get('https://mosspeaker.ru/platform-v1/knowledge.jso
 links=[urllib.parse.urljoin('https://mosspeaker.ru/',x['url']) for x in knowledge]
 with concurrent.futures.ThreadPoolExecutor(max_workers=4) as ex:
  results.extend(rec for rec,_ in ex.map(read,links))
-assets={urllib.parse.urljoin('https://mosspeaker.ru/',x) for r in results for x in r.get('html',{}).get('assets',[]) if urllib.parse.urljoin('https://mosspeaker.ru/',x).startswith('https://mosspeaker.ru/')}
+assets={urllib.parse.urljoin(r.get('final_url',r['url']),x) for r in results for x in r.get('html',{}).get('assets',[]) if urllib.parse.urlparse(urllib.parse.urljoin(r.get('final_url',r['url']),x)).netloc in ('mosspeaker.ru','vote.mosspeaker.ru')}
 assets.add('https://mosspeaker.ru/assets/hero-loop.mp4')
 with concurrent.futures.ThreadPoolExecutor(max_workers=4) as ex:
  asset_results=[r for r,_ in ex.map(lambda u:read(u,'HEAD'),sorted(assets))]
