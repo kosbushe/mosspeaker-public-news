@@ -1,0 +1,16 @@
+name: Read-only public website audit
+on: workflow_dispatch
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - run: python3 scripts/public-audit.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: public-website-audit
+          path: audit-output/
+          retention-days: 7
