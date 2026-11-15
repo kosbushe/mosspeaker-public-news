@@ -92,6 +92,35 @@ function get_public_feed(string $channel): ?string {
     return $ok !== false && $status === 200 ? $payload : null;
 }
 
+function get_relay_feed(): ?array {
+ return get_relay_url('https://moskovsky-spiker.bushekon.chatgpt.site/api/public-news');
+}
+
+function get_relay_url(string $url): ?array {
+    if (!function_exists('curl_init')) return null;
+    $c = curl_init($url . '?v=' . (int)floor(time()/300));
+    curl_setopt_array($c, [CURLOPT_RETURNTRANSFER=>true, CURLOPT_CONNECTTIMEOUT=>4, CURLOPT_TIMEOUT=>8, CURLOPT_SSL_VERIFYPEER=>true, CURLOPT_SSL_VERIFYHOST=>2, CURLOPT_FOLLOWLOCATION=>false, CURLOPT_HTTPHEADER=>['Cache-Control: no-cache']]);
+    $raw = curl_exec($c); $code = curl_getinfo($c, CURLINFO_HTTP_CODE); curl_close($c);
+    if ($code !== 200 || !is_string($raw) || strlen($raw)>100000) return null;
+    $data = json_decode($raw, true);
+    $stamp = strtotime($data['checked_at'] ?? '');
+    if (!$stamp || $stamp>time()+600 || $stamp<time()-NEWS_MAX_AGE) return null;
+    $items=[];
+    foreach (array_slice($data['items']??[],0,12) as $i) {
+        $ch=$i['channel']??''; $id=$i['id']??''; $t=strtotime($i['published_at']??'');
+        if (!isset(NEWS_SOURCES[$ch]) || !preg_match('~^'.preg_quote($ch,'~').'/[0-9]+$~',$id) || !$t || $t<time()-NEWS_MAX_AGE || $t>time()+600 || !is_string($i['title']??null) || mb_strlen($i['title'],'UTF-8')>250) continue;
+        $items[]=['id'=>$id,'type'=>NEWS_SOURCES[$ch]['type'],'title'=>$i['title'],'source'=>NEWS_SOURCES[$ch]['name'],'channel'=>$ch,'url'=>'https://t.me/'.$id,'published_at'=>gmdate('c',$t)];
+    }
+    if (!$items) return null;
+    $sources=[];
+    foreach (NEWS_SOURCES as $ch=>$v) {
+        $ok=false; foreach($data['sources']??[] as $source) if(($source['channel']??'')===$ch && ($source['status']??'')==='updated')$ok=true;
+        $sources[]=['channel'=>$ch,'source'=>$v['name'],'status'=>$ok && $stamp>=time()-7200?'updated':'cached_or_unavailable'];
+    }
+    return ['items'=>$items,'sources'=>$sources,'checked_at'=>gmdate('c',$stamp),'updated_at'=>gmdate('c',$stamp),'checked_epoch'=>time(),'refresh_ok'=>$stamp>=time()-7200 && count(array_filter($sources, static function($s){return $s['status']==='updated';}))===count(NEWS_SOURCES),'refresh_interval_seconds'=>300,'cache_refreshed_at'=>gmdate('c'),'collector_trigger'=>in_array($data['collector_trigger']??'', ['sites','schedule','workflow_dispatch','push','cli'], true)?$data['collector_trigger']:'unknown'];
+}
+
+
 function load_news_json(string $file): array {
     if (!is_file($file)) return [];
     $raw = file_get_contents($file);

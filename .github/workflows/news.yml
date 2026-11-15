@@ -4,7 +4,7 @@ on:
     - cron: '25,55 * * * *'
   workflow_dispatch:
   push:
-    paths: ['collect.php', 'news-library.php', '.github/workflows/news.yml']
+    paths: ['collect.php', 'news-library.php', '.github/workflows/news.yml', 'scripts/verify-live.py']
 permissions:
   contents: write
 concurrency:
@@ -33,3 +33,5 @@ jobs:
             git commit -m 'Refresh public club and park headlines'
             git push
           fi
+      - name: Verify published website cache
+        run: python3 scripts/verify-live.py
