@@ -41,6 +41,10 @@ urls=['https://mosspeaker.ru/','http://mosspeaker.ru/','https://www.mosspeaker.r
 results=[];bodies={}
 with concurrent.futures.ThreadPoolExecutor(max_workers=4) as ex:
  for rec,body in ex.map(read,urls):results.append(rec);bodies[rec['url']]=body
+# Recovery snapshot of three public, non-authenticated resources only.
+for url,relative in [('https://mosspeaker.ru/test/','test/index.html'),('https://mosspeaker.ru/robots.txt','robots.txt'),('https://mosspeaker.ru/sitemap.xml','sitemap.xml')]:
+ if bodies.get(url):
+  target=OUT/'public-snapshot'/relative;target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(bodies[url])
 knowledge=json.loads(bodies.get('https://mosspeaker.ru/platform-v1/knowledge.json')or'[]')
 links=[urllib.parse.urljoin('https://mosspeaker.ru/',x['url']) for x in knowledge]
 with concurrent.futures.ThreadPoolExecutor(max_workers=4) as ex:
