@@ -1,4 +1,4 @@
-import json,time,urllib.request
+import json,time,urllib.request,hashlib,re
 from datetime import datetime
 from pathlib import Path
 expected=json.loads(Path('feed.json').read_text())['checked_at']
@@ -20,3 +20,12 @@ for attempt in range(9):
  except Exception as e: print('Live verification unavailable: '+type(e).__name__,flush=True)
  if attempt<8:time.sleep(25)
 else:raise SystemExit('Live site did not confirm the new feed within the verification window')
+
+# Read-only guard: the locked video introduction must stay byte-identical.
+with urllib.request.urlopen('https://mosspeaker.ru/?news-health='+str(int(time.time())),timeout=15) as r: html=r.read().decode('utf-8')
+hero=re.search(r'<section class="restored-intro\b.*?</section>',html,re.S)
+assert hero and hashlib.sha256(hero.group(0).encode()).hexdigest()=='dc5696d5ed91d05d1358c0f341879f0f9ebc7098090abcc4813f784c8f57b385', 'Locked hero changed'
+req=urllib.request.Request('https://mosspeaker.ru/assets/hero-loop.mp4',headers={'Range':'bytes=0-1023'})
+with urllib.request.urlopen(req,timeout=15) as r:
+ assert r.status in (200,206) and len(r.read(1024))==1024, 'Hero video unavailable'
+print('Locked hero unchanged; video available',flush=True)
