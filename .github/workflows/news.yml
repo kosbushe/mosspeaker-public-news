@@ -4,12 +4,12 @@ on:
     - cron: '25,55 * * * *'
   workflow_dispatch:
   push:
-    paths: ['collect.php', 'news-library.php', '.github/workflows/news.yml', 'scripts/verify-live.py']
+    paths: ['collect.php', 'news-library.php', '.github/workflows/news.yml', 'scripts/verify-live.py', 'refresh-request.json']
 permissions:
   contents: write
 concurrency:
   group: public-news
-  cancel-in-progress: false
+  cancel-in-progress: true
 jobs:
   refresh:
     runs-on: ubuntu-24.04
