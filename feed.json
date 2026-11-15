@@ -1,6 +1,15 @@
 {
     "items": [
         {
+            "id": "mos_speaker/33",
+            "type": "КЛУБ",
+            "title": "В Gemini теперь можно открыть созданный документ прямо в чате, выделить кусок текста и попросить поправить только его.",
+            "source": "Московский спикер",
+            "channel": "mos_speaker",
+            "url": "https://t.me/mos_speaker/33",
+            "published_at": "2026-11-15T08:59:35+00:00"
+        },
+        {
             "id": "mos_speaker/32",
             "type": "КЛУБ",
             "title": "Четыре минуты я бы не пытался заполнить всем, что знаю по теме.",
@@ -80,19 +89,10 @@
             "channel": "gorkyparkmsk",
             "url": "https://t.me/gorkyparkmsk/14867",
             "published_at": "2026-11-10T13:31:06+00:00"
-        },
-        {
-            "id": "mos_speaker/27",
-            "type": "КЛУБ",
-            "title": "Вы тоже начинаете выступление со слов «сегодня я хотел бы поговорить»?",
-            "source": "Московский спикер",
-            "channel": "mos_speaker",
-            "url": "https://t.me/mos_speaker/27",
-            "published_at": "2026-11-10T08:59:35+00:00"
         }
     ],
-    "checked_at": "2026-11-15T08:01:29+00:00",
-    "updated_at": "2026-11-15T08:01:29+00:00",
+    "checked_at": "2026-11-15T13:49:45+00:00",
+    "updated_at": "2026-11-15T13:49:45+00:00",
     "sources": [
         {
             "channel": "mos_speaker",
@@ -106,6 +106,6 @@
         }
     ],
     "refresh_interval_seconds": 1800,
-    "collector_trigger": "workflow_dispatch",
+    "collector_trigger": "push",
     "collector_backend": "sites"
 }
