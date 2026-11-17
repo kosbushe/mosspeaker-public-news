@@ -89,19 +89,10 @@
             "channel": "gorkyparkmsk",
             "url": "https://t.me/gorkyparkmsk/14874",
             "published_at": "2026-11-11T09:03:54+00:00"
-        },
-        {
-            "id": "gorkyparkmsk/14867",
-            "type": "ПАРК ГОРЬКОГО",
-            "title": "Видели Парк Горького в метро? Если нет: ловите эксклюзив 🎬",
-            "source": "Парк Горького",
-            "channel": "gorkyparkmsk",
-            "url": "https://t.me/gorkyparkmsk/14867",
-            "published_at": "2026-11-10T13:31:06+00:00"
         }
     ],
-    "checked_at": "2026-11-17T06:08:04+00:00",
-    "updated_at": "2026-11-17T06:08:04+00:00",
+    "checked_at": "2026-11-17T07:15:57+00:00",
+    "updated_at": "2026-11-17T07:15:57+00:00",
     "sources": [
         {
             "channel": "mos_speaker",
