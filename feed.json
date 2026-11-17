@@ -100,8 +100,8 @@
             "published_at": "2026-11-10T13:31:06+00:00"
         }
     ],
-    "checked_at": "2026-11-17T03:58:58+00:00",
-    "updated_at": "2026-11-17T03:58:58+00:00",
+    "checked_at": "2026-11-17T04:12:34+00:00",
+    "updated_at": "2026-11-17T04:12:34+00:00",
     "sources": [
         {
             "channel": "mos_speaker",
@@ -115,6 +115,6 @@
         }
     ],
     "refresh_interval_seconds": 1800,
-    "collector_trigger": "schedule",
+    "collector_trigger": "push",
     "collector_backend": "sites"
 }
