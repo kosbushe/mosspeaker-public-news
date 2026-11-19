@@ -1,6 +1,15 @@
 {
     "items": [
         {
+            "id": "mos_speaker/36",
+            "type": "КЛУБ",
+            "title": "Четыре минуты быстро показывают цену длинного вступления.",
+            "source": "Московский спикер",
+            "channel": "mos_speaker",
+            "url": "https://t.me/mos_speaker/36",
+            "published_at": "2026-11-19T15:40:48+00:00"
+        },
+        {
             "id": "gorkyparkmsk/14900",
             "type": "ПАРК ГОРЬКОГО",
             "title": "Первый выход на лед в этом сезоне: в маске!",
@@ -80,19 +89,10 @@
             "channel": "mos_speaker",
             "url": "https://t.me/mos_speaker/31",
             "published_at": "2026-11-13T08:59:35+00:00"
-        },
-        {
-            "id": "mos_speaker/30",
-            "type": "КЛУБ",
-            "title": "Для меня уважение к аудитории начинается в том числе с её знаний.",
-            "source": "Московский спикер",
-            "channel": "mos_speaker",
-            "url": "https://t.me/mos_speaker/30",
-            "published_at": "2026-11-12T15:40:48+00:00"
         }
     ],
-    "checked_at": "2026-11-19T15:06:29+00:00",
-    "updated_at": "2026-11-19T15:06:29+00:00",
+    "checked_at": "2026-11-19T16:15:25+00:00",
+    "updated_at": "2026-11-19T16:15:25+00:00",
     "sources": [
         {
             "channel": "mos_speaker",
