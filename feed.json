@@ -1,6 +1,15 @@
 {
     "items": [
         {
+            "id": "mos_speaker/37",
+            "type": "КЛУБ",
+            "title": "Для меня ясность речи во многом связана с порядком.",
+            "source": "Московский спикер",
+            "channel": "mos_speaker",
+            "url": "https://t.me/mos_speaker/37",
+            "published_at": "2026-11-21T09:15:37+00:00"
+        },
+        {
             "id": "gorkyparkmsk/14903",
             "type": "ПАРК ГОРЬКОГО",
             "title": "Работа в Парке Горького становится отправной точкой для научных исследований: рассказываем об опыте нашей сотрудницы 🤓",
@@ -80,19 +89,10 @@
             "channel": "mos_speaker",
             "url": "https://t.me/mos_speaker/33",
             "published_at": "2026-11-15T08:59:35+00:00"
-        },
-        {
-            "id": "mos_speaker/32",
-            "type": "КЛУБ",
-            "title": "Четыре минуты я бы не пытался заполнить всем, что знаю по теме.",
-            "source": "Московский спикер",
-            "channel": "mos_speaker",
-            "url": "https://t.me/mos_speaker/32",
-            "published_at": "2026-11-14T09:15:35+00:00"
         }
     ],
-    "checked_at": "2026-11-21T09:09:11+00:00",
-    "updated_at": "2026-11-21T09:09:11+00:00",
+    "checked_at": "2026-11-21T10:15:32+00:00",
+    "updated_at": "2026-11-21T10:15:32+00:00",
     "sources": [
         {
             "channel": "mos_speaker",
