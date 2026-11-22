@@ -89,19 +89,10 @@
             "channel": "mos_speaker",
             "url": "https://t.me/mos_speaker/34",
             "published_at": "2026-11-15T16:10:41+00:00"
-        },
-        {
-            "id": "mos_speaker/33",
-            "type": "КЛУБ",
-            "title": "В Gemini теперь можно открыть созданный документ прямо в чате, выделить кусок текста и попросить поправить только его.",
-            "source": "Московский спикер",
-            "channel": "mos_speaker",
-            "url": "https://t.me/mos_speaker/33",
-            "published_at": "2026-11-15T08:59:35+00:00"
         }
     ],
-    "checked_at": "2026-11-22T08:10:53+00:00",
-    "updated_at": "2026-11-22T08:10:53+00:00",
+    "checked_at": "2026-11-22T09:12:35+00:00",
+    "updated_at": "2026-11-22T09:12:35+00:00",
     "sources": [
         {
             "channel": "mos_speaker",
