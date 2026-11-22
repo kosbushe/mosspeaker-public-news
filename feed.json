@@ -1,6 +1,15 @@
 {
     "items": [
         {
+            "id": "gorkyparkmsk/14910",
+            "type": "ПАРК ГОРЬКОГО",
+            "title": "22 ноября: день рождения Эль Лисицкого!",
+            "source": "Парк Горького",
+            "channel": "gorkyparkmsk",
+            "url": "https://t.me/gorkyparkmsk/14910",
+            "published_at": "2026-11-22T07:04:24+00:00"
+        },
+        {
             "id": "gorkyparkmsk/14909",
             "type": "ПАРК ГОРЬКОГО",
             "title": "Побывали на экскурсии из цикла «Парк вне себя» и узнали, могла ли архитектура создать нового человека?",
@@ -64,15 +73,6 @@
             "published_at": "2026-11-18T08:31:29+00:00"
         },
         {
-            "id": "gorkyparkmsk/14894",
-            "type": "ПАРК ГОРЬКОГО",
-            "title": "Единственная экскурсия, которая не повторится: Александр Усольцев: москвовед и создатель проекта Moscowwalks: покажет Крымский вал с неожиданной стороны.",
-            "source": "Парк Горького",
-            "channel": "gorkyparkmsk",
-            "url": "https://t.me/gorkyparkmsk/14894",
-            "published_at": "2026-11-17T11:53:20+00:00"
-        },
-        {
             "id": "mos_speaker/35",
             "type": "КЛУБ",
             "title": "«Всё понятно?»: вопрос, на который очень удобно кивнуть.",
@@ -100,8 +100,8 @@
             "published_at": "2026-11-15T08:59:35+00:00"
         }
     ],
-    "checked_at": "2026-11-22T06:09:54+00:00",
-    "updated_at": "2026-11-22T06:09:54+00:00",
+    "checked_at": "2026-11-22T07:04:55+00:00",
+    "updated_at": "2026-11-22T07:04:55+00:00",
     "sources": [
         {
             "channel": "mos_speaker",
@@ -115,6 +115,6 @@
         }
     ],
     "refresh_interval_seconds": 1800,
-    "collector_trigger": "push",
+    "collector_trigger": "schedule",
     "collector_backend": "sites"
 }
