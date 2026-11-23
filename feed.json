@@ -1,6 +1,15 @@
 {
     "items": [
         {
+            "id": "gorkyparkmsk/14917",
+            "type": "ПАРК ГОРЬКОГО",
+            "title": "Обзорные экскурсии по Парку Горького стали длиннее и интереснее ✨",
+            "source": "Парк Горького",
+            "channel": "gorkyparkmsk",
+            "url": "https://t.me/gorkyparkmsk/14917",
+            "published_at": "2026-11-23T13:40:16+00:00"
+        },
+        {
             "id": "mos_speaker/38",
             "type": "КЛУБ",
             "title": "Мне важно, чтобы за словами можно было увидеть действие.",
@@ -73,15 +82,6 @@
             "published_at": "2026-11-19T15:40:48+00:00"
         },
         {
-            "id": "gorkyparkmsk/14900",
-            "type": "ПАРК ГОРЬКОГО",
-            "title": "Первый выход на лед в этом сезоне: в маске!",
-            "source": "Парк Горького",
-            "channel": "gorkyparkmsk",
-            "url": "https://t.me/gorkyparkmsk/14900",
-            "published_at": "2026-11-19T08:01:09+00:00"
-        },
-        {
             "id": "mos_speaker/35",
             "type": "КЛУБ",
             "title": "«Всё понятно?»: вопрос, на который очень удобно кивнуть.",
@@ -91,8 +91,8 @@
             "published_at": "2026-11-17T07:20:35+00:00"
         }
     ],
-    "checked_at": "2026-11-23T11:14:36+00:00",
-    "updated_at": "2026-11-23T11:14:36+00:00",
+    "checked_at": "2026-11-23T21:44:23+00:00",
+    "updated_at": "2026-11-23T21:44:23+00:00",
     "sources": [
         {
             "channel": "mos_speaker",
@@ -106,6 +106,6 @@
         }
     ],
     "refresh_interval_seconds": 1800,
-    "collector_trigger": "push",
+    "collector_trigger": "schedule",
     "collector_backend": "sites"
 }
