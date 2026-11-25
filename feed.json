@@ -46,33 +46,6 @@
             "published_at": "2026-11-22T12:00:54+00:00"
         },
         {
-            "id": "gorkyparkmsk/14910",
-            "type": "ПАРК ГОРЬКОГО",
-            "title": "22 ноября: день рождения Эль Лисицкого!",
-            "source": "Парк Горького",
-            "channel": "gorkyparkmsk",
-            "url": "https://t.me/gorkyparkmsk/14910",
-            "published_at": "2026-11-22T07:04:24+00:00"
-        },
-        {
-            "id": "gorkyparkmsk/14909",
-            "type": "ПАРК ГОРЬКОГО",
-            "title": "Побывали на экскурсии из цикла «Парк вне себя» и узнали, могла ли архитектура создать нового человека?",
-            "source": "Парк Горького",
-            "channel": "gorkyparkmsk",
-            "url": "https://t.me/gorkyparkmsk/14909",
-            "published_at": "2026-11-21T14:40:31+00:00"
-        },
-        {
-            "id": "gorkyparkmsk/14904",
-            "type": "ПАРК ГОРЬКОГО",
-            "title": "До открытия Театрального катка осталось меньше 2 недель!",
-            "source": "Парк Горького",
-            "channel": "gorkyparkmsk",
-            "url": "https://t.me/gorkyparkmsk/14904",
-            "published_at": "2026-11-21T10:40:48+00:00"
-        },
-        {
             "id": "mos_speaker/37",
             "type": "КЛУБ",
             "title": "Для меня ясность речи во многом связана с порядком.",
@@ -91,8 +64,8 @@
             "published_at": "2026-11-19T15:40:48+00:00"
         }
     ],
-    "checked_at": "2026-11-25T01:08:14+00:00",
-    "updated_at": "2026-11-25T01:08:14+00:00",
+    "checked_at": "2026-11-25T09:55:55+00:00",
+    "updated_at": "2026-11-25T09:55:55+00:00",
     "sources": [
         {
             "channel": "mos_speaker",
