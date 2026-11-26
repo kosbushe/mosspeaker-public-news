@@ -1,6 +1,33 @@
 {
     "items": [
         {
+            "id": "mos_speaker/40",
+            "type": "КЛУБ",
+            "title": "История в выступлении для меня ценна тем, что помогает увидеть мысль через событие.",
+            "source": "Московский спикер",
+            "channel": "mos_speaker",
+            "url": "https://t.me/mos_speaker/40",
+            "published_at": "2026-11-26T15:40:49+00:00"
+        },
+        {
+            "id": "gorkyparkmsk/14934",
+            "type": "ПАРК ГОРЬКОГО",
+            "title": "За кулисами подготовки к открытию «Театрального катка» 🎭",
+            "source": "Парк Горького",
+            "channel": "gorkyparkmsk",
+            "url": "https://t.me/gorkyparkmsk/14934",
+            "published_at": "2026-11-26T15:20:22+00:00"
+        },
+        {
+            "id": "gorkyparkmsk/14933",
+            "type": "ПАРК ГОРЬКОГО",
+            "title": "Дарим билеты на открытие катка в Парке Горького",
+            "source": "Парк Горького",
+            "channel": "gorkyparkmsk",
+            "url": "https://t.me/gorkyparkmsk/14933",
+            "published_at": "2026-11-26T13:00:56+00:00"
+        },
+        {
             "id": "gorkyparkmsk/14932",
             "type": "ПАРК ГОРЬКОГО",
             "title": "Почему слова гида «посмотрите налево, посмотрите направо»: это красный флаг на экскурсии?",
@@ -62,19 +89,10 @@
             "channel": "mos_speaker",
             "url": "https://t.me/mos_speaker/37",
             "published_at": "2026-11-21T09:15:37+00:00"
-        },
-        {
-            "id": "mos_speaker/36",
-            "type": "КЛУБ",
-            "title": "Четыре минуты быстро показывают цену длинного вступления.",
-            "source": "Московский спикер",
-            "channel": "mos_speaker",
-            "url": "https://t.me/mos_speaker/36",
-            "published_at": "2026-11-19T15:40:48+00:00"
         }
     ],
-    "checked_at": "2026-11-26T11:35:09+00:00",
-    "updated_at": "2026-11-26T11:35:09+00:00",
+    "checked_at": "2026-11-26T20:34:34+00:00",
+    "updated_at": "2026-11-26T20:34:34+00:00",
     "sources": [
         {
             "channel": "mos_speaker",
